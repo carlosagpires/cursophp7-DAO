@@ -44,14 +44,18 @@ require_once("config.php");
 
 //Update usuario
 
+//$usuario = new Usuario();
+//$usuario->loadById(8);
+//$usuario->update("professor", "senha43");
+//echo $usuario;
+
+//Apaga um registo
+
 $usuario = new Usuario();
-
-$usuario->loadById(8);
-
-$usuario->update("professor", "senha43");
+$usuario->loadById(12);
+$usuario->delete();
 
 echo $usuario;
-
 
 
 ?>
